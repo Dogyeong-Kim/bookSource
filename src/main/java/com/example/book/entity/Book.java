@@ -35,4 +35,9 @@ public class Book extends BaseEntity {
 
     @Column(nullable = false)
     private int price;
+
+    public String replaceTitle(String title) {
+        String newTitle = title.replace("제목", "book title");
+        return newTitle;
+    }
 }
